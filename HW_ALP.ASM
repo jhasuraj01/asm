@@ -1,11 +1,11 @@
 PRINT macro str
-  mov ah, 09h
+  mov ah, 09h     ; Display String
   lea dx, str
   int 21h
 endm
 
 EXIT macro
-  mov ah, 4ch
+  mov ah, 4ch     ; Terminate the code properly and return to DOS Prompt
   int 21h
   end
 endm
